@@ -268,7 +268,7 @@
           } else {
             this.goods = Object.deepCopy(val);
             // 先得到分类名称
-            const names = val.cname.split("/");
+            const names = val.categoryName.split(",");
             // 组织商品分类数据
             this.goods.categories = [
               { id: val.cid1, name: names[0] },
